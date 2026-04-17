@@ -1,36 +1,204 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Project Setup - Next.js Application
 
-## Getting Started
+Dokumentasi ini berisi panduan lengkap untuk menjalankan project Next.js ini secara lokal, mulai dari instalasi hingga menjalankan aplikasi.
 
-First, run the development server:
+---
+
+## 📦 Requirements
+
+Pastikan kamu sudah menginstall:
+
+* Node.js (disarankan versi LTS)
+* Package Manager (pilih salah satu):
+
+  * npm
+  * yarn
+  * pnpm
+  * bun
+
+Cek versi:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+## ⚙️ Installation
+
+1. **Clone repository**
+
+```bash
+git clone <your-repository-url>
+```
+
+2. **Masuk ke folder project**
+
+```bash
+cd <nama-project>
+```
+
+3. **Install dependencies**
+
+Pilih sesuai package manager yang kamu gunakan:
+
+```bash
+npm install
+```
+
+atau
+
+```bash
+yarn install
+```
+
+atau
+
+```bash
+pnpm install
+```
+
+atau
+
+```bash
+bun install
+```
+
+---
+
+## ▶️ Running the Project
+
+Jalankan development server:
 
 ```bash
 npm run dev
-# or
+```
+
+atau
+
+```bash
 yarn dev
-# or
+```
+
+atau
+
+```bash
 pnpm dev
-# or
+```
+
+atau
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Akses Aplikasi
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Buka browser dan akses:
 
-## Learn More
+```
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+Aplikasi akan otomatis reload ketika ada perubahan pada code.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Struktur Dasar Project
 
-## Deploy on Vercel
+* `app/` → Routing & halaman utama (App Router)
+* `components/` → Reusable components
+* `public/` → Asset static (gambar, dll)
+* `styles/` → Styling (jika ada)
+* `lib/` → Helper / utility functions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✏️ Development
+
+Mulai edit halaman utama di:
+
+```
+app/page.tsx
+```
+
+Semua perubahan akan langsung terlihat (hot reload).
+
+---
+
+## 🔐 Environment Variables (Opsional)
+
+Jika project menggunakan environment variables, buat file:
+
+```
+.env.local
+```
+
+Contoh:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+---
+
+## 📦 Build Production
+
+Untuk build aplikasi:
+
+```bash
+npm run build
+```
+
+Jalankan hasil build:
+
+```bash
+npm start
+```
+
+---
+
+## 🚀 Deployment
+
+Project ini dapat dideploy ke berbagai platform, seperti:
+
+* Vercel (recommended)
+* VPS / Server sendiri
+* Docker
+
+---
+
+## 📚 Notes
+
+* Pastikan dependencies sudah terinstall sebelum menjalankan project
+* Gunakan Node.js versi terbaru agar kompatibel
+* Jika terjadi error, coba hapus `node_modules` lalu install ulang
+
+```bash
+rm -rf node_modules
+npm install
+```
+
+---
+
+## 🤝 Contribution
+
+Jika ingin berkontribusi:
+
+1. Fork repository
+2. Buat branch baru
+3. Commit perubahan
+4. Submit pull request
+
+---
+
+## 📄 License
+
+Project ini menggunakan lisensi sesuai kebutuhan tim / organisasi.
+
+---
+
+Happy Coding 💻🔥
