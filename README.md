@@ -30,13 +30,13 @@ npm -v
 1. **Clone repository**
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/rhyssh/aksara-landing.git
 ```
 
 2. **Masuk ke folder project**
 
 ```bash
-cd <nama-project>
+cd aksara-landing
 ```
 
 3. **Install dependencies**
